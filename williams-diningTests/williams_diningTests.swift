@@ -3,7 +3,7 @@
 //  williams-diningTests
 //
 //  Created by Nathan Andersen on 4/13/16.
-//  Copyright © 2016 Gladden Labs. All rights reserved.
+//  Copyright © 2016 Andersen Labs. All rights reserved.
 //
 
 import XCTest
@@ -28,8 +28,8 @@ class williams_diningTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+        self.measure {
+            //
         }
     }
     

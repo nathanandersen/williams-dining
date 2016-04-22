@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11129.15" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodItemViewCell" id="r1l-cW-NtF" customClass="FoodItemViewCell" customModule="williams_dining" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r1l-cW-NtF" id="58Z-fl-GRz">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQh-G3-rsZ">
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.59999999999999998" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="iQh-G3-rsZ" secondAttribute="height" multiplier="1:1" id="te4-VQ-j1p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRE-yY-Mdm">
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.59999999999999998" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZRE-yY-Mdm" secondAttribute="height" multiplier="1:1" id="ZiI-8h-clJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zU2-1S-J3S" customClass="MarqueeLabel" customModule="williams_dining" customModuleProvider="target">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="labelize" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="holdScrolling" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="scrollRate">
+                                <real key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZRE-yY-Mdm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zU2-1S-J3S" secondAttribute="trailing" id="MBR-mF-kE8"/>
+                    <constraint firstItem="zU2-1S-J3S" firstAttribute="leading" secondItem="58Z-fl-GRz" secondAttribute="leadingMargin" constant="10" id="NwZ-wa-b1T"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iQh-G3-rsZ" secondAttribute="bottom" id="Sgh-XI-ubC"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iQh-G3-rsZ" secondAttribute="trailing" constant="10" id="VQl-Gj-7hh"/>
+                    <constraint firstItem="ZRE-yY-Mdm" firstAttribute="centerY" secondItem="58Z-fl-GRz" secondAttribute="centerY" id="Vsc-N9-MyM"/>
+                    <constraint firstItem="zU2-1S-J3S" firstAttribute="centerY" secondItem="58Z-fl-GRz" secondAttribute="centerY" id="gAo-5k-iEA"/>
+                    <constraint firstItem="iQh-G3-rsZ" firstAttribute="centerY" secondItem="58Z-fl-GRz" secondAttribute="centerY" id="jYb-bT-5Q0"/>
+                    <constraint firstItem="iQh-G3-rsZ" firstAttribute="top" secondItem="58Z-fl-GRz" secondAttribute="topMargin" id="joL-OD-Ip9"/>
+                    <constraint firstItem="ZRE-yY-Mdm" firstAttribute="top" secondItem="58Z-fl-GRz" secondAttribute="topMargin" id="qxC-HB-WO7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZRE-yY-Mdm" secondAttribute="bottom" id="rLE-ei-yyW"/>
+                    <constraint firstItem="iQh-G3-rsZ" firstAttribute="width" secondItem="ZRE-yY-Mdm" secondAttribute="width" id="sk0-Oa-ROK"/>
+                    <constraint firstItem="iQh-G3-rsZ" firstAttribute="leading" secondItem="ZRE-yY-Mdm" secondAttribute="trailing" constant="10" id="uT8-Jl-q9E"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="5"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="glutenFreeLabel" destination="iQh-G3-rsZ" id="UFm-an-f6c"/>
+                <outlet property="nameLabel" destination="zU2-1S-J3S" id="oCt-Pc-dav"/>
+                <outlet property="veganLabel" destination="ZRE-yY-Mdm" id="u0c-jf-IEB"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="4"/>
+        </tableViewCell>
+    </objects>
+</document>
